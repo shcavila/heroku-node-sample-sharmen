@@ -6,14 +6,14 @@
 .card {
     min-height: 500px;
     background-color: #03a1fc;
-    width: 20rem;
+    width: 25rem;
     margin: auto;
 }
 
 .card-footer {
     background-color: #03a1fc;
     display: none;
-    width: 20rem;
+    width: 25rem;
     margin: auto;
 }
 
