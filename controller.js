@@ -13,15 +13,6 @@ $(function() {
         $('#username').val('')
     });
 
-    // $("#btnEnd").click(function(){
-    //     alert('end');
-    //     socket.emit('disconnect', $('#username').val());
-    //     $("#home").show();
-    //     $("#main").hide();
-    //     $(".card-footer").hide();
-    //     $('.messages').empty();
-    // });
-
     $('#messageForm').submit(function(event) {
         event.preventDefault();
         socket.emit('chat message', $('#message').val());
