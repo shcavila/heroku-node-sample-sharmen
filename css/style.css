@@ -1,0 +1,54 @@
+#username {
+    border: none;
+    margin-top: 120px;
+}
+
+.card {
+    min-height: 500px;
+    background-color: #03a1fc;
+    width: 25rem;
+    margin: auto;
+}
+
+.card-footer {
+    background-color: #03a1fc;
+    display: none;
+    width: 25rem;
+    margin: auto;
+}
+
+
+/* .btn {
+    margin-top: -15px;
+    position: relative;
+    ;
+    float: right;
+} */
+
+#users {
+    list-style-type: none;
+    justify-content: justify;
+}
+
+#username {
+    margin: 180px 0 160px 0;
+}
+
+.messages {
+    list-style-type: none;
+    width: 20rem;
+}
+
+.messages .form-control {
+    background-color: white;
+    margin: 10px -40px 10px 0;
+    width: auto;
+}
+
+.clearfix {
+    margin-left: -150px;
+    width: 100px;
+    margin-right: 50px;
+    position: fixed;
+    top: 100px;
+}
