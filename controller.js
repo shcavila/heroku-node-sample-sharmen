@@ -30,10 +30,10 @@ $(document).ready(function() {
     socket.on('chat message', function(msg) {
         user = msg.split(":")
         if (username == user[0]) {
-            $('.messages').append($('<input readonly class="form-control bg-light myMessage "><br>').val(msg));
+            $('.messages').append($('<input readonly class="form-control bg-light myMessage "><br><br>').val(msg));
             window.scrollTo(0, document.body.scrollHeight);
         } else {
-            $('.messages').append($('<input readonly class="form-control bg-success otherMessage "><br>').val(msg));
+            $('.messages').append($('<input readonly class="form-control bg-success otherMessage "><br><br>').val(msg));
             window.scrollTo(0, document.body.scrollHeight);
         }
 
