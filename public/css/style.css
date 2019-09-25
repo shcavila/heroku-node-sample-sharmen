@@ -40,11 +40,22 @@
     width: 20rem;
 }
 
-.messages .form-control {
+
+/* .messages .form-control {
     background-color: white;
     margin: 10px -40px 10px 0;
     width: auto;
     overflow: hidden;
+} */
+
+.myMessage {
+    float: left;
+    border: 2px solid black;
+}
+
+.otherMessage {
+    float: right;
+    border: 2px solid black;
 }
 
 .clearfix {
