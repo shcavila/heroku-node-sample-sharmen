@@ -1,0 +1,25 @@
+{
+    "name": "heroku-node-sample-sharmen",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/meister68/heroku-node-sample-sharmen.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/meister68/heroku-node-sample-sharmen/issues"
+    },
+    "homepage": "https://github.com/meister68/heroku-node-sample-sharmen#readme",
+    "engines": {
+        "node": "10.15"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
