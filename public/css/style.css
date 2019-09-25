@@ -50,12 +50,14 @@
 
 .myMessage {
     float: left;
+    margin: 10px 0 10px -40px;
     border: 2px solid black;
 }
 
 .otherMessage {
     float: right;
     border: 2px solid black;
+    margin: 10px -40px 10px 0;
 }
 
 .clearfix {
