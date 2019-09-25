@@ -13,6 +13,15 @@ $(function() {
         $('#username').val('')
     });
 
+    // $("#btnEnd").click(function(){
+    //     alert('end');
+    //     socket.emit('disconnect', $('#username').val());
+    //     $("#home").show();
+    //     $("#main").hide();
+    //     $(".card-footer").hide();
+    //     $('.messages').empty();
+    // });
+
     $('#messageForm').submit(function(event) {
         event.preventDefault();
         socket.emit('chat message', $('#message').val());
@@ -36,5 +45,18 @@ $(function() {
         $('#users').append($('<li>').text(info));
         $('#online-users').append('<tr><td>' + name[0] + '</td></tr>');
     });
+
+    // socket.on('disconnect', function (msg) {
+    //     $('#users').append($('<li>').text(msg));
+    //  });
+
+    // function typing(){
+
+    //   $('#m').keydown(function(key){
+    //     if(key.keyCode != 13){
+
+    //     }
+    //   });
+
 
 });
