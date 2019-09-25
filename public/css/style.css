@@ -3,28 +3,27 @@
     margin-top: 120px;
 }
 
+.card-header {
+    color: white;
+    position: sticky;
+    top: 0;
+    display: none;
+}
+
+#main {
+    display: none;
+}
+
 .card {
     min-height: 500px;
     background-color: #03a1fc;
     width: 25rem;
     margin: auto;
-    position: relative;
 }
 
-.card-footer {
-    background-color: #03a1fc;
-    display: none;
-    width: 25rem;
-    margin: auto;
+#type {
+    margin-top: 450px;
 }
-
-
-/* .btn {
-    margin-top: -15px;
-    position: relative;
-    ;
-    float: right;
-} */
 
 #users {
     list-style-type: none;
@@ -36,32 +35,46 @@
 }
 
 .messages {
-    list-style-type: none;
     width: 20rem;
 }
 
-
-/* .messages .form-control {
-    background-color: white;
-    margin: 10px -40px 10px 0;
-    width: auto;
-    overflow: hidden;
-} */
-
 .myMessage {
-    margin: 10px 0 10px -40px;
-    border: 2px solid black;
-    width: auto
+    float: right;
+    margin: 0 -30px 30px 200px;
+    display: inline;
+    border-radius: 5%;
+    padding: 0 10px 0 10px;
+}
+
+.myMessage span {
+    font-weight: 600;
+    float: right;
+}
+
+.myMessage p {
+    float: right;
 }
 
 .otherMessage {
-    border: 2px solid black;
-    width: auto;
-    margin: 10px -40px 10px 0;
+    background-color: #a39f9e;
+    float: left;
+    margin: 0 200px 30px 0;
+    display: inline;
+    border-radius: 5%;
+    padding: 0 10px 0 10px;
+}
+
+.otherMessage span {
+    font-weight: 600;
+    float: left;
+}
+
+.myMessage p {
+    float: left;
 }
 
 .clearfix {
-    margin-left: -150px;
+    margin-left: -200px;
     width: 100px;
     margin-right: 50px;
     position: fixed;

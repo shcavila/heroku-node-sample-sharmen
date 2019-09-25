@@ -16,40 +16,38 @@
     <br>
     <div class="container-fluid col-sm-6">
         <div class="card text-center">
+            <div class="card-header bg-dark ">Messages</div>
             <div class="card-body">
                 <div id="home">
                     <form action="#" id="userForm">
                         <input type="text" class="form-control text-center" placeholder="Username" id="username" required>
                     </form>
                 </div>
-                <div>
-
-                </div>
-                <div id="main" style="display:none;">
-
+                <div id="main">
                     <div class="text-center">
                         <ul id="users"></ul>
                     </div>
                     <div>
-                        <div class="messages">
+                        <div class="messages"></div>
+                        <div class="container" id="type">
+                            <form action="#" id="messageForm">
+                                <input type="text" class="form-control" placeholder="Type message" id="message">
+                            </form>
+                        </div>
 
+                    </div>
+                    <div class="container">
+                        <div class="clearfix">
+                            <span>Other users</span>
+                            <!-- <span class="float-left">Float right</span> -->
+                            <table class="table table-bordered col-sm-4" id="online-users"></table>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
-        <div class="card-footer">
-            <form action="#" id="messageForm">
-                <input type="text" class="form-control" placeholder="Type message" id="message">
-            </form>
-        </div>
-        <div class="container">
-            <div class="clearfix">
-                <span>Online users</span>
-                <!-- <span class="float-left">Float right</span> -->
-                <table class="table table-bordered col-sm-4" id="online-users"></table>
-            </div>
-        </div>
+    </div>
 
 
     </div>
