@@ -30,7 +30,7 @@ $(document).ready(function() {
     socket.on('chat message', function(msg) {
         user = msg.split(":")
         if (username == user[0]) {
-            $('.messages').append($('<div class="bg-light myMessage"><br><br>').val(msg));
+            $('.messages').append($('<div class=" float-left bg-light myMessage"><br><br>').val(msg));
             window.scrollTo(0, document.body.scrollHeight);
         } else {
             $('.messages').append($('<div  class="bg-success otherMessage"><br><br>').val(msg));
