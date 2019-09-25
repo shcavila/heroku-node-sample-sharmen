@@ -8,6 +8,7 @@
     background-color: #03a1fc;
     width: 25rem;
     margin: auto;
+    position: relative;
 }
 
 .card-footer {
