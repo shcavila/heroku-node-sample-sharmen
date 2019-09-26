@@ -7,20 +7,11 @@ $(function() {
         event.preventDefault();
         $("#home").hide();
         $("#main").show();
-        $(".card-footer").show();
+        $(".card-header").show();
         socket.emit('user', $('#username').val());
         username = $('#username').val();
         $('#username').val('')
     });
-
-    // $("#btnEnd").click(function(){
-    //     alert('end');
-    //     socket.emit('disconnect', $('#username').val());
-    //     $("#home").show();
-    //     $("#main").hide();
-    //     $(".card-footer").hide();
-    //     $('.messages').empty();
-    // });
 
     $('#messageForm').submit(function(event) {
         event.preventDefault();
@@ -29,12 +20,12 @@ $(function() {
         return false;
     });
     socket.on('chat message', function(msg) {
-        user = msg.split(":")
-        if (username == user[0]) {
-            $('.messages').append($('<input readonly class="form-control float-right bg-light"><br>').val(msg));
+        msg = msg.split(":")
+        if (username == msg[0]) {
+            $('.messages').append($('<div class="myMessage bg-light">').append("<span>" + msg[0]).append("<br><p>" + msg[1]));
             window.scrollTo(0, document.body.scrollHeight);
         } else {
-            $('.messages').append($('<input readonly class="form-control float-left bg-success"><br>').val(msg));
+            $('.messages').append($('<br><div class="otherMessage">').append("<span>" + msg[0]).append("<br><p>" + msg[1]));
             window.scrollTo(0, document.body.scrollHeight);
         }
 
